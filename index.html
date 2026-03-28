@@ -6,7 +6,6 @@
     <title>Kiger Logging | Selective Timber Harvesting & Silviculture PA</title>
     <meta name="description" content="Family-owned logging in Lewisburg, PA. 45+ years experience in selective harvesting of Oak and Walnut. Sustainable forestry and fair pricing.">
     
-    <!-- Google Fonts for Professional Look -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
     <style>
@@ -33,7 +32,6 @@
 
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
 
-        /* Navigation */
         nav {
             background: var(--primary-green);
             color: var(--white);
@@ -50,7 +48,6 @@
         .nav-links a { color: var(--white); text-decoration: none; margin-left: 20px; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; }
         .nav-links a:hover { color: var(--accent-orange); }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(11, 26, 16, 0.7), rgba(11, 26, 16, 0.7)), 
                         url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=2000');
@@ -65,61 +62,49 @@
             color: var(--white);
             padding: 0 20px;
         }
-        .hero h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 20px; line-height: 1.1; }
-        .hero p { font-size: clamp(1.1rem, 3vw, 1.5rem); max-width: 800px; margin-bottom: 30px; color: var(--wood-tan); }
+        .hero h1 { font-size: clamp(2rem, 6vw, 4rem); margin-bottom: 20px; line-height: 1.1; }
+        .hero p { font-size: clamp(1rem, 2.5vw, 1.3rem); max-width: 800px; margin-bottom: 30px; color: var(--wood-tan); }
         
         .btn {
             background: var(--accent-orange);
             color: var(--white);
-            padding: 18px 35px;
+            padding: 20px 40px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            cursor: pointer;
+            border: none;
             transition: var(--transition);
             box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+            font-family: 'Montserrat', sans-serif;
         }
         .btn:hover { background: #d35400; transform: translateY(-3px); }
 
-        /* General Section Styling */
-        section { padding: 100px 10%; }
+        section { padding: 80px 10%; }
         h2 { font-size: 2.5rem; color: var(--primary-green); margin-bottom: 20px; text-align: center; }
-        .section-desc { text-align: center; max-width: 700px; margin: 0 auto 50px; font-size: 1.1rem; color: #666; }
 
-        /* About Section */
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-        .about-text p { margin-bottom: 20px; font-size: 1.05rem; }
         .badge { background: var(--primary-green); color: var(--white); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 10px; display: inline-block; }
 
-        /* Services / What We Buy Cards */
         .services-bg { background-color: var(--deep-forest); color: var(--white); }
         .services-bg h2 { color: var(--white); }
-        .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .card { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); transition: var(--transition); }
-        .card:hover { background: rgba(255,255,255,0.1); transform: translateY(-10px); }
-        .card h3 { color: var(--accent-orange); margin-bottom: 15px; font-size: 1.5rem; }
-        .card ul { list-style: none; }
-        .card ul li { margin-bottom: 10px; display: flex; align-items: center; }
-        .card ul li::before { content: '✓'; color: var(--accent-orange); margin-right: 10px; font-weight: bold; }
+        .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { background: rgba(255,255,255,0.05); padding: 40px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); }
+        .card h3 { color: var(--accent-orange); margin-bottom: 15px; }
 
-        /* Trust Stats */
-        .stats { background: var(--wood-tan); padding: 60px 10%; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; color: var(--primary-green); }
-        .stat-item h3 { font-size: 3rem; margin-bottom: 5px; }
-        .stat-item p { font-weight: 700; text-transform: uppercase; font-size: 0.9rem; }
+        .stats { background: var(--wood-tan); padding: 40px 10%; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; color: var(--primary-green); }
+        .stat-item h3 { font-size: 2.5rem; }
 
-        /* Contact Section */
         .contact-cta { text-align: center; background: var(--white); }
-        .phone-link { font-size: clamp(1.5rem, 5vw, 3rem); color: var(--primary-green); font-weight: 700; text-decoration: none; display: block; margin: 30px 0; transition: var(--transition); }
-        .phone-link:hover { color: var(--accent-orange); }
+        .phone-link { font-size: clamp(1.5rem, 5vw, 3rem); color: var(--primary-green); font-weight: 700; text-decoration: none; display: block; margin: 30px 0; }
 
-        footer { background: #050c07; color: #888; padding: 40px 10%; text-align: center; font-size: 0.85rem; border-top: 1px solid #111; }
+        footer { background: #050c07; color: #888; padding: 40px 10%; text-align: center; font-size: 0.85rem; }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .about-grid { grid-template-columns: 1fr; }
-            nav { flex-direction: column; gap: 15px; }
-            .nav-links a { margin: 0 10px; }
+            nav { flex-direction: column; gap: 10px; }
         }
     </style>
 </head>
@@ -130,16 +115,16 @@
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#species">Species</a>
-        <a href="#philosophy">Our Science</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <section class="hero">
-    <span class="badge" style="background: var(--accent-orange);">Established 45+ Years</span>
+    <span class="badge" style="background: var(--accent-orange);">45+ Years Experience</span>
     <h1>Preserving Pennsylvania Woodlands</h1>
     <p>Family-owned expertise in sustainable silviculture and selective timber harvesting. Based in Lewisburg, serving Central PA.</p>
-    <a href="tel:5704903496" class="btn">Get a Free Timber Inspection</a>
+    <!-- Updated CTA Button per user request -->
+    <button class="btn" onclick="showEmail()">Call Ken today if you have a track of standing timber to harvest.</button>
 </section>
 
 <section id="about">
@@ -147,93 +132,60 @@
         <div class="about-text">
             <span class="badge">Trusted Legacy</span>
             <h2>Integrity in Every Cut</h2>
-            <p><strong>Kiger Logging</strong> (pronounced like the <em>Kiger Mustangs</em>) was built on the values of owner-operator Kenneth Kiger, who was born and raised right here in Pennsylvania [1-3].</p>
-            <p>For over four decades, we have worked closely with local landowners to protect soil, water quality, and wildlife habitats while delivering fair, competitive pricing for standing timber [2, 4].</p>
-            <p>We aren't just loggers; we are stewards of the land, ensuring that your forest remains healthy and productive for generations to come [1, 5].</p>
+            <p><strong>Kiger Logging</strong> (pronounced like the <em>Kiger Mustangs</em>) brings 45 years of hands-on experience in selective harvesting and woodland management [3, 4].</p>
+            <p>We work closely with landowners to protect soil, water, and wildlife habitat while delivering fair, competitive pricing for your standing timber [3, 5].</p>
         </div>
-        <div class="card" style="color: var(--text-dark); background: var(--light-grey); border-left: 5px solid var(--primary-green);">
+        <div class="card" style="color: var(--text-dark); background: #f4f4f4; border-left: 5px solid var(--primary-green);">
             <h3>Why Landowners Choose Us</h3>
-            <ul>
-                <li><strong>Local Expertise:</strong> Deep knowledge of PA's climate and species [4, 6].</li>
-                <li><strong>Safety-First:</strong> Precision and care on every job [6].</li>
-                <li><strong>No Pressure:</strong> Transparent written offers with zero high-pressure tactics [3, 7].</li>
-                <li><strong>Referral Based:</strong> Built on decades of local trust [4].</li>
-            </ul>
+            <p>Over 70% of our business is derived through word of mouth, migrating from one satisfied landowner to the next throughout the region [4, 6].</p>
         </div>
     </div>
 </section>
 
 <div class="stats">
-    <div class="stat-item">
-        <h3>45+</h3>
-        <p>Years Experience</p>
-    </div>
-    <div class="stat-item">
-        <h3>70%</h3>
-        <p>Referral-Based Business</p>
-    </div>
-    <div class="stat-item">
-        <h3>30+</h3>
-        <p>Mile Service Radius</p>
-    </div>
+    <div class="stat-item"><h3>45+</h3><p>Years Experience</p></div>
+    <div class="stat-item"><h3>70%</h3><p>Referrals</p></div>
+    <div class="stat-item"><h3>5+</h3><p>Acre Minimum</p></div>
 </div>
 
 <section id="species" class="services-bg">
     <h2>Current Timber Requirements</h2>
-    <p class="section-desc" style="color: #bbb;">We are actively purchasing high-quality standing hardwoods in Union County and surrounding areas.</p>
-    
     <div class="card-container">
         <div class="card">
             <h3>Minimum Acreage</h3>
-            <p>We specialize in managing timber tracts of <strong>5 acres or more</strong>. Our focus is on tracts that warrant a professional, selective management plan.</p>
+            <p>We are actively seeking tracks of <strong>5 acres or more</strong> of high-quality hardwood trees [User Correction].</p>
         </div>
         <div class="card">
             <h3>Target Species</h3>
-            <ul>
-                <li>Red Oak</li>
-                <li>White Oak</li>
-                <li>Walnut</li>
-                <li>Veneer Quality Trees</li>
-            </ul>
+            <p>We specialize in <strong>Red Oak, White Oak, and Walnut</strong>, including <strong>veneer quality</strong> trees [2, 3, 7].</p>
         </div>
         <div class="card">
-            <h3>Our Process</h3>
-            <ul>
-                <li>Free On-Site Inspection</li>
-                <li>Professional Timber Valuation</li>
-                <li>Clear Written Offers</li>
-                <li>Timely, Reliable Closings</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="philosophy">
-    <div class="about-grid">
-        <div class="card" style="padding: 0; border: none; background: transparent;">
-             <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800" alt="Healthy PA Forest" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-        </div>
-        <div class="about-text">
-            <span class="badge">The Science of Forestry</span>
-            <h2>The Art of Silviculture</h2>
-            <p>At Kiger Logging, we practice <strong>Silviculture</strong>—the art and science of controlling the growth, health, and quality of forests [5, 8].</p>
-            <p>Unlike clear-cutting, <strong>selective harvesting</strong> targets mature or at-risk trees. This approach prevents rot in unmanaged forests, protects the forest floor with low-impact equipment, and promotes sustainable regrowth [4, 8, 9].</p>
+            <h3>Service Area</h3>
+            <p>Proudly serving Lewisburg and the surrounding Central PA area within a <strong>30+ mile radius</strong> [8-10].</p>
         </div>
     </div>
 </section>
 
 <section id="contact" class="contact-cta">
-    <span class="badge" style="background: var(--accent-orange);">Get Started</span>
+    <span class="badge">Get in Touch</span>
     <h2>Ready to Value Your Timber?</h2>
-    <p>Contact Ken Kiger today for an honest, professional assessment of your woodland.</p>
+    <p>Direct call to Ken Kiger for a professional, honest offer:</p>
     <a href="tel:5704903496" class="phone-link">570-490-3496</a>
-    <p><em>"Still going strong because loggers don't quit!" [6]</em></p>
+    <p><em>"Still going strong because loggers don't quit!" [11]</em></p>
 </section>
 
 <footer>
     <p>&copy; 2024 Ken Kiger Logging. Lewisburg, Pennsylvania. Licensed and Insured.</p>
-    <p style="margin-top: 10px; font-size: 0.7rem;">Family-Owned, Selective, Sustainable. Serving Union County and beyond.</p>
 </footer>
+
+<script>
+    function showEmail() {
+        // Pop-up alert with email as requested
+        alert("Contact us at: Kigerlog@gmail.com\n\nOr call Ken directly at 570-490-3496 to discuss your timber harvest.");
+        // Optional: Redirect to call
+        window.location.href = "tel:5704903496";
+    }
+</script>
 
 </body>
 </html>
